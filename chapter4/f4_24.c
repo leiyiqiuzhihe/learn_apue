@@ -1,10 +1,11 @@
+//chdir会跟踪符号链接
 #include"../apue.h"
 int main(void)
 {
     char    *ptr;
     size_t  size;
 
-    if (chdir("/home/lei/data_structure") < 0)
+    if (chdir("/home/lei/apue/chapter4/symbolic") < 0)
         err_sys("chdir failed");
 
     ptr = path_alloc(&size);    /* our own function */
